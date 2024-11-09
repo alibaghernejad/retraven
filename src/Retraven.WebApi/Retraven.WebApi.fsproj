@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Endpoints/RetrieveDataWithQuery.fs" />
+    <Compile Include="Extensions/WebAppBuilderExtensions.fs" />
+    <Compile Include="Endpoints/CreateEmbeddingTask.fs" />
+    <Compile Include="Giraffe/WebApp.fs" />
+    <Compile Include="WeatherForecast.fs" />
+    <Compile Include="Controllers/WeatherForecastController.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Npgsql" Version="9.3.1" />
+    <PackageReference Include="Aspire.Qdrant.Client" Version="9.3.1" />
+    <PackageReference Include="Aspire.RabbitMQ.Client" Version="9.3.1" />
+    <PackageReference Include="CommunityToolkit.Aspire.Minio.Client" Version="9.5.1-beta.308" />
+    <PackageReference Include="Giraffe" Version="7.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.1" />
+    <PackageReference Include="Minio" Version="6.0.5" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Retraven.ServiceDefaults\Retraven.ServiceDefaults.fsproj" />
+    <ProjectReference Include="..\Retraven.Core\Retraven.Core.fsproj" />
+    <ProjectReference Include="..\Retraven.Shell\Retraven.Shell.fsproj" />
+  </ItemGroup>
+
+</Project>
