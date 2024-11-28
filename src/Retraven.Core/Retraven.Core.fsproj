@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup><Compile Include="Env.fs" /><Compile Include="DataRetrieve.fs" />
+    <Compile Include="Domain Events/EventBase.fs" />
+    <Compile Include="Messaging/MessageBroker.fs" />
+    <Compile Include="EmbeddedDocument.fs" />
+    <Compile Include="Embedding.fs" />
+    <Compile Include="ObjectStorage.fs" />
+    <Compile Include="ErrorMessage.fs" />
+    <Compile Include="Helpers.fs" />
+    <Compile Include="Constants.fs" />
+    <Compile Include="Library.fs" />
+  </ItemGroup>
+
+</Project>
