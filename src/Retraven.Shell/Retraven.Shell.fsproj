@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <UserSecretsId>dotnet-Retraven.Shell-698ef28e-f82d-4ad0-812a-068e60fec7ca</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <Compile Include="Qdrant/EmbedApiClient.fs" />
+    <Compile Include="Qdrant/RerankRetrive.fs" />
+    <Compile Include="Messaging/RabbitMq.fs" />
+    <Compile Include="db/DbContext.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Qdrant.Client" Version="9.3.1" />
+    <PackageReference Include="Aspire.RabbitMQ.Client" Version="9.3.1" />
+    <PackageReference Include="FSharp.Data" Version="6.6.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.4" />
+    <PackageReference Include="Npgsql" Version="9.0.3" />
+    <PackageReference Include="SQLProvider" Version="1.5.11" />
+    <PackageReference Include="SQLProvider.PostgreSql" Version="1.5.11" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Retraven.Core\Retraven.Core.fsproj" />
+  </ItemGroup>
+</Project>
