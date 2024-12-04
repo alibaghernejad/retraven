@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+      "ionide.ionide-fsharp",
+      "ms-dotnettools.csharp",
+      "redhat.vscode-yaml"
+    ],
+    "unwantedRecommendations": []
+  }
+  
+  
