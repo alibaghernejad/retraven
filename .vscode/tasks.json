@@ -1,0 +1,64 @@
+{
+    "version": "2.0.0",
+    
+    "tasks": [
+        {
+            "label": "BuildAppHost",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/Retraven.AppHost/Retraven.AppHost.fsproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary",
+                "--configuration", "Debug"
+
+            ],
+            "problemMatcher": "$msCompile",
+
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "BuildWebApi",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/Retraven.WebApi/Retraven.WebApi.fsproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary",
+                "--configuration", "Debug"
+
+            ],
+            "problemMatcher": "$msCompile",
+
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "BuildRag",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/Retraven.Rag/Retraven.Rag.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary",
+                "--configuration", "Debug"
+
+            ],
+            "problemMatcher": "$msCompile",
+
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+        
+    ]
+}

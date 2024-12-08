@@ -1,0 +1,64 @@
+{
+
+    "version": "0.2.0",
+    "compounds": [
+        {
+          "name": "Debug All Retraven Projects",
+          "configurations": ["AppHost", "WebApi"],
+          "default": true
+        }
+      ],
+    "configurations": [
+        {
+            "name": "AppHost",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "BuildAppHost",
+            "program": "${workspaceFolder}/src/Retraven.AppHost/bin/Debug/net9.0/Retraven.AppHost.dll",
+            "cwd": "${workspaceFolder}/src/Retraven.AppHost",
+            "args": ["--verbose", "diag"],
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "requireExactSource": true,
+            "justMyCode": true
+        },
+        {
+            "name": "WebApi",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "BuildWebApi",
+            "program": "${workspaceFolder}/src/Retraven.WebApi/bin/Debug/net9.0/Retraven.WebApi.dll",
+            "cwd": "${workspaceFolder}/src/Retraven.WebApi",
+            "args": ["--verbose", "diag"],
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "requireExactSource": true,
+            "justMyCode": true
+            
+        },
+         {
+            "name": "Rag",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "BuildRag",
+            "program": "${workspaceFolder}/src/Retraven.Rag/bin/Debug/net9.0/Retraven.Rag.dll",
+            "cwd": "${workspaceFolder}/src/Retraven.Rag",
+            "args": ["--verbose", "diag"],
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "requireExactSource": true,
+            "justMyCode": true
+            
+        },
+        {
+            "name": ".NET Core Attach to Service",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}",
+            "env": {
+              "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+          }
+          
+    ]
+}
