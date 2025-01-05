@@ -24,7 +24,6 @@
     <Compile Include="Config/QdrantConfig.fs" />
     <Compile Include="Config/RabbitMqConfig.fs" />
     <Compile Include="Resources/Constants.fs" />
-    <Compile Include="Extensions/ResourceBuilderExtensions.fs" />
     <Compile Include="Config/PostgresConfig.fs" />
     <Compile Include="Config/MinIoConfig.fs" />
     <Compile Include="Program.fs" />
