@@ -28,14 +28,7 @@ type EmbeddingTaskState =
     | Generating 
     | Generated of vector: float[]
     | Stored of id: Guid
-    | RetrievalFailed of error: string
-
-// type DocEmbeddingTaskHandlerInput = 
-//     | DefaultEmbedingTaskResult of Task<DocumentEmbeddingTask option>
-
-// type DocEmbeddingTaskHandlerOutput = 
-//     | DefaultEmbedingTaskResult of Task<DocumentEmbeddingTask option>
-    
+    | RetrievalFailed of error: string  
     
 type EmbeddingTaskHandlerResult = Task<Result<EmbeddingTask, string>>
 type EmbeddingTaskHandler = EmbeddingTask -> EmbeddingTaskHandlerResult
