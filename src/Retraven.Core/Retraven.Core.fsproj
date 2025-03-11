@@ -11,10 +11,8 @@
     <Compile Include="EmbeddedDocument.fs" />
     <Compile Include="Embedding.fs" />
     <Compile Include="ObjectStorage.fs" />
-    <Compile Include="ErrorMessage.fs" />
     <Compile Include="Helpers.fs" />
     <Compile Include="Constants.fs" />
-    <Compile Include="Library.fs" />
   </ItemGroup>
 
 </Project>
