@@ -9,7 +9,6 @@
     <Compile Include="Extensions/WebAppBuilderExtensions.fs" />
     <Compile Include="Endpoints/CreateEmbeddingTask.fs" />
     <Compile Include="Giraffe/WebApp.fs" />
-    <Compile Include="WeatherForecast.fs" />
     <Compile Include="Controllers/WeatherForecastController.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
