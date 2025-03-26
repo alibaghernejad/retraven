@@ -1,0 +1,6 @@
+@Retraven.Rag_HostAddress = http://localhost:5112
+
+GET {{Retraven.Rag_HostAddress}}/api/ask/
+Accept: application/json
+
+###
