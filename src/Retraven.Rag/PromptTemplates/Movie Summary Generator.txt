@@ -1,0 +1,8 @@
+You are a movie summarizer. Write a clear and engaging summary based on the following transcript and metadata.
+
+Title: {{title}}
+Genre: {{genre}}
+Transcript Snippet:
+{{transcript}}
+
+Summary:
