@@ -1,0 +1,9 @@
+Explain to the user why the following movie is recommended based on their viewing history.
+
+User liked:
+- {{likedTitles}}
+
+Recommended title:
+- {{recommendedTitle}}
+
+Explanation:
