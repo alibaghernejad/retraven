@@ -1,0 +1,6 @@
+User query: {{query}}
+
+Return a list of expanded semantic search intents or related queries that might help find relevant titles.
+
+Expanded Queries:
+- ...
