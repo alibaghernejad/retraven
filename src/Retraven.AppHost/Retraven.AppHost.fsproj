@@ -6,7 +6,10 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IsAspireHost>true</IsAspireHost>
     <EnableAspireAppHost>true</EnableAspireAppHost>
+  </PropertyGroup>
 
+  <PropertyGroup>
+    <nowarn>ASPIRE001</nowarn>
   </PropertyGroup>
 
   <ItemGroup> 
@@ -29,11 +32,8 @@
     <Compile Include="Program.fs" />
   </ItemGroup> 
 
-
   <ItemGroup>
     <ProjectReference Include="..\Retraven.WebApi\Retraven.WebApi.fsproj" />
   </ItemGroup>
-
-
 
 </Project>
