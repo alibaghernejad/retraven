@@ -1,0 +1,8 @@
+Given this transcript, extract the main characters and describe their roles in the story.
+
+Transcript:
+{{transcript}}
+
+Characters:
+- Name: ...
+  Role: ...
