@@ -1,0 +1,8 @@
+Divide the following transcript into scenes and write a 1-2 sentence summary for each scene.
+
+Transcript:
+{{transcript}}
+
+Scene Summaries:
+1. ...
+2. ...
