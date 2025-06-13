@@ -1,0 +1,9 @@
+You are a helpful assistant. Use the provided context to answer the user's question. Be accurate and concise.
+
+Context:
+{{context}}
+
+Question:
+{{question}}
+
+Answer:
