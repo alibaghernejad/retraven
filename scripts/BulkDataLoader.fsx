@@ -2,10 +2,9 @@
 open FSharp.Data
 
 [<Literal>]
-let contents = "gapfilm-contents.json"
+let contents = "documents.json"
 
+type Doc = JsonProvider<contents>;;
+let sample = Doc.GetSample()
 
-type contents = FSharp.Data.JsonProvider<contents>;;
-
-let doc = contents.GetSample()
-doc.Hits.Hits.[0].Source.Title
+printfn "%A" sample
