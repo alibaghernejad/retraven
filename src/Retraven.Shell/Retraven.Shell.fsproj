@@ -10,7 +10,6 @@
     <Compile Include="Qdrant/RerankRetrive.fs" />
     <Compile Include="Messaging/RabbitMq.fs" />
     <Compile Include="db/DbContext.fs" />
-    <Compile Include="Program.fs" />
   </ItemGroup>
 
 
