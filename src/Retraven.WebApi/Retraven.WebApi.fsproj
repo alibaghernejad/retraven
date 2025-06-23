@@ -8,7 +8,6 @@
     <Compile Include="Endpoints/RetrieveDataWithQuery.fs" />
     <Compile Include="Extensions/WebAppBuilderExtensions.fs" />
     <Compile Include="Endpoints/CreateEmbeddingTask.fs" />
-    <Compile Include="Giraffe/WebApp.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
