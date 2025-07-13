@@ -5,7 +5,8 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
-  <ItemGroup><Compile Include="Env.fs" /><Compile Include="DataRetrieve.fs" />
+  <ItemGroup>
+    <Compile Include="DataRetrieve.fs" />
     <Compile Include="Domain Events/EventBase.fs" />
     <Compile Include="Messaging/MessageBroker.fs" />
     <Compile Include="EmbeddedDocument.fs" />
